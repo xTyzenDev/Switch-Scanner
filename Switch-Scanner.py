@@ -24,7 +24,7 @@ try:
 		sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 		result = sock.connect_ex((Ip, port))
 		if result == 0:
-			print('[+] Port ' + str(port) + 'Ouvert')
+			print('[+] Port ' + str(port) + ' Ouvert')
 		sock.close()
 except socket.gaierror:
 	print('Serveur Injoignable')		
