@@ -17,8 +17,8 @@ import os
 import socket
 
 #code
-Ip = input('>>> Veuillez entrer adresse ip a scanner: ')
-print('[*] Scan de un ip : ' + Ip + ' Loading...')
+Ip = input('>>> Veuillez entrer adresse ip a scanner : ')
+print('[*] Scan de : ' + Ip + ' Loading...')
 try:
 	for port in range(1,1025):
 		sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
