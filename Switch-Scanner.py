@@ -18,13 +18,13 @@ import socket
 
 #code
 Ip = input('>>> Veuillez entrer adresse ip a scanner ')
-print('[+] Scan de un ip : ' + Ip + ' Loading...')
+print('[*] Scan de un ip : ' + Ip + ' Loading...')
 try:
 	for port in range(1,1025):
 		sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 		result = sock.connect_ex((Ip, port))
-		if result ==0:
-			print('[#] Port ' + port + 'Ouvert')
+		if result == 0:
+			print('[+] Port ' + str(port) + 'Ouvert')
 		sock.close()
 except socket.gaierror:
 	print('Serveur Injoignable')		
